@@ -12,9 +12,14 @@
 		D82774F31F6395790000333C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82774F11F6395790000333C /* Main.storyboard */; };
 		D82774F51F6395790000333C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D82774F41F6395790000333C /* Assets.xcassets */; };
 		D82774F81F6395790000333C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D82774F61F6395790000333C /* LaunchScreen.storyboard */; };
+		D8E54F201F63A9A3004EB14E /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = D8E54F1F1F63A9A3004EB14E /* GoogleService-Info (1).plist */; };
+		DC4116B18DCA214D73B61EDE /* Pods_gdg_firebase_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6D6AAF12CEF26F5439DF2B /* Pods_gdg_firebase_demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D6D6AAF12CEF26F5439DF2B /* Pods_gdg_firebase_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gdg_firebase_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F15A471F9FEE0FF25F33B3B /* Pods-gdg-firebase-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdg-firebase-demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gdg-firebase-demo/Pods-gdg-firebase-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		75C87450E28C50E77AB07FD7 /* Pods-gdg-firebase-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gdg-firebase-demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-gdg-firebase-demo/Pods-gdg-firebase-demo.release.xcconfig"; sourceTree = "<group>"; };
 		D82774EA1F6395790000333C /* gdg-firebase-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gdg-firebase-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D82774ED1F6395790000333C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D82774EF1F6395790000333C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		D82774F41F6395790000333C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D82774F71F6395790000333C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D82774F91F6395790000333C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8E54F1F1F63A9A3004EB14E /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC4116B18DCA214D73B61EDE /* Pods_gdg_firebase_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		368C9E1A1B099C1A92794747 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F15A471F9FEE0FF25F33B3B /* Pods-gdg-firebase-demo.debug.xcconfig */,
+				75C87450E28C50E77AB07FD7 /* Pods-gdg-firebase-demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		429870FA7B6D32EDFDCE8D87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D6D6AAF12CEF26F5439DF2B /* Pods_gdg_firebase_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D82774E11F6395780000333C = {
 			isa = PBXGroup;
 			children = (
 				D82774EC1F6395790000333C /* gdg-firebase-demo */,
 				D82774EB1F6395790000333C /* Products */,
+				368C9E1A1B099C1A92794747 /* Pods */,
+				429870FA7B6D32EDFDCE8D87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +86,7 @@
 				D82774F41F6395790000333C /* Assets.xcassets */,
 				D82774F61F6395790000333C /* LaunchScreen.storyboard */,
 				D82774F91F6395790000333C /* Info.plist */,
+				D8E54F1F1F63A9A3004EB14E /* GoogleService-Info (1).plist */,
 			);
 			path = "gdg-firebase-demo";
 			sourceTree = "<group>";
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D82774FC1F6395790000333C /* Build configuration list for PBXNativeTarget "gdg-firebase-demo" */;
 			buildPhases = (
+				6CF82B435C6EFEA515D5855B /* [CP] Check Pods Manifest.lock */,
 				D82774E61F6395780000333C /* Sources */,
 				D82774E71F6395780000333C /* Frameworks */,
 				D82774E81F6395780000333C /* Resources */,
+				91DF256373AD002C38D86CA0 /* [CP] Embed Pods Frameworks */,
+				D321F18564EDD24DBE18DE29 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,10 +157,59 @@
 				D82774F81F6395790000333C /* LaunchScreen.storyboard in Resources */,
 				D82774F51F6395790000333C /* Assets.xcassets in Resources */,
 				D82774F31F6395790000333C /* Main.storyboard in Resources */,
+				D8E54F201F63A9A3004EB14E /* GoogleService-Info (1).plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CF82B435C6EFEA515D5855B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		91DF256373AD002C38D86CA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gdg-firebase-demo/Pods-gdg-firebase-demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D321F18564EDD24DBE18DE29 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gdg-firebase-demo/Pods-gdg-firebase-demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D82774E61F6395780000333C /* Sources */ = {
@@ -257,6 +336,7 @@
 		};
 		D82774FD1F6395790000333C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F15A471F9FEE0FF25F33B3B /* Pods-gdg-firebase-demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VBK4T9U642;
@@ -270,6 +350,7 @@
 		};
 		D82774FE1F6395790000333C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75C87450E28C50E77AB07FD7 /* Pods-gdg-firebase-demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VBK4T9U642;
@@ -300,6 +381,7 @@
 				D82774FE1F6395790000333C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
