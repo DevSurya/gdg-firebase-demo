@@ -7,5 +7,8 @@ target 'gdg-firebase-demo' do
 
   # Pods for gdg-firebase-demo
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Database'
 
 end
